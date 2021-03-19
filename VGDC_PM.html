@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en-US">
+
+<!--
+WRITTEN BY: Henry Dang
+EMAIL: hpdang@uci.edu
+-->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Henry Dang">
+  <meta name="description" content="Project Management Experience with VGDC">
+  <!-- you would link to an external stylesheet here! -->
+  <!-- <link rel="stylesheet" href="css/4/w3.css"> -->
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--Image on the sidebar-->
+  <style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Montserrat", sans-serif
+    }
+
+    .w3-row-padding img {
+      margin-bottom: 12px
+    }
+
+    .bgimg {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url('images/VGDC_bg.jpg');
+      min-height: 100%;
+    }
+  </style>
+  <!-- you would also link to Bootstrap here! -->
+  <title>Henry Dang &#8211; Portfolio</title>
+</head>
+
+
+<body>
+<!-- Sidebar with image -->
+  <nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:40%;">
+    <div class="bgimg"> <a href="index.html"> </a></div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="w3-main w3-padding-large" style="margin-left:40%">
+
+    <!-- Menu icon to open sidebar -->
+    <span class="w3-button w3-top w3-black w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;"
+      onclick= goHome()><span class="fa fa-home"></span></span>
+
+    <!-- Header -->
+    <header class="w3-container w3-center" style="padding:128px 16px" id="home">
+      <h1 class="w3-jumbo"><strong>Project Management @ VGDC</strong></h1>
+      <p>What I learned from my experience</p>
+      <img src="images/VGDC_bg.jpg" alt ="scaled down vgdc background" class="w3-image w3-hide-large w3-hide-small w3-round"
+        style="display:block;width:80%;margin:auto;">
+      <img src="images/VGDC_bg.jpg" alt ="slighly scaled down vgdc background" class="w3-image w3-hide-large w3-hide-medium w3-round" width="1000"
+        height="1333">
+    
+    </header>
+
+    <!-- Portfolio Section -->
+    <div class="w3-padding-32 w3-content" id="portfolio">
+      <h2 class="w3-text-grey">My Portfolio</h2>
+      <hr class="w3-opacity">
+
+      <section id="portfolio_reflection_1" class="content-block" data-column-mode-sm="single" data-column-mode-xs="single">
+          <div class="row">
+            <div id="port_des1" class="column" data-xl-width="6">
+              <div id="port_title1">
+                <h3 style="font-size: 1.33333rem;" data-mce-style="font-size: 1.33333rem;"><span
+                    class="font_ywvyx1kkv">Game Signups<br></span></h3>
+              </div>
+              <div id="subtitle_container1" class="column-content">
+                <p> <img src="images/Game-Signups.png" alt="Game-Signups form" width="800" height="600"> </p>
+                <h3 style="font-size: 1.33333rem;" data-mce-style="font-size: 1.33333rem;"><span
+                    class="font_ywvyx1kkv">Team Lead Interviews<br></span></h3>
+                <p> <img src="images/Team-lead-Interviews.PNG" alt="Interviews form" width="900" height="600"></p>
+              </div>
+
+            </div>
+
+            <div id="spacer_row1" class="row">
+              <div id="spacer_column1" class="column" data-xl-width="12">
+                <div class="content-wrapper">
+
+                  <div id="content_spacer1" class="column-content" data-module="spacer">
+
+                    <div class="spacer-container">
+                      <div class="is-content">
+                        <div class="spacer">
+                          <!-- horizontal spacer -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+
+      <!-- End Portfolio Section -->
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin:-24px">
+      <a href="https://github.com/BAOTD789" target="_blank" rel="noreferrer noopener"><em class="fa fa-github w3-hover-opacity"></em></a>
+      
+      <a href="https://www.linkedin.com/in/henry-d-018545195/" target="_blank" rel="noreferrer noopener">
+        <span class="fa fa-linkedin w3-hover-opacity"></span></a>
+      <a href="https://www.twitch.tv/baotd" target="_blank" rel="noreferrer noopener">
+        <span class="fa fa-twitch w3-hover-opacity"></span></a>
+      <a href="https://twitter.com/BAOTeeDee" target="_blank" rel="noreferrer noopener">
+        <span class="fa fa-twitter w3-hover-opacity"></span></a>
+      <a href="https://www.youtube.com/channel/UCKE6-nQEYU_RFx0SmkcyKCw" target="_blank" rel="noreferrer noopener">
+        <span class="fa fa-youtube w3-hover-opacity"></span></a>
+      <p class="w3-medium">CSS assisted by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank"
+          class="w3-hover-text-green">w3.css</a></p>
+      <!-- End footer -->
+    </footer>
+
+    <!-- END PAGE CONTENT -->
+  </div>
+
+  <script>
+    // Open and close sidebar
+    function openNav() {
+      document.getElementById("mySidebar").style.width = "60%";
+      document.getElementById("mySidebar").style.display = "block";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidebar").style.display = "none";
+    }
+
+    function goHome() {
+        window.open('index.html');
+    }
+  </script>
+
+</body>
+
+</html>

@@ -1,27 +1,283 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <link href="styles/style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
-    <meta charset="utf-8">
-    <title>My test page</title>
-  </head>
-  <body>
-    <h1> Ludwig head </h1>
-    <a href= "javascript: changeText(1);"> 
-      <img src="images/ludwig-face.jpg" alt="My test image">
-    </a>
-    <div id ="div"></div>
-    <p> At <a href="https://www.ludwig.gg">ludwig.gg,</a> we can see that ludwig is very short.  He is </p>
-    <ul>
-        <li> a tax evader </li>
-        <li> a sniper target </li>
-        <li> can we emphasize how short he is, like holy shit.</li>
-    </ul>
+<!doctype html>
+<html lang="en-US">
 
-    <p> ha ha funny streamer meme, upvote. </p>
-    <button> Change title</button>
-    <script src="scripts/main.js"></script>
-    <script src="scripts/changeText.js"></script>
-  </body>
-</html> 
+<!--
+WRITTEN BY: Henry Dang
+EMAIL: hpdang@uci.edu
+-->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Henry Dang">
+  <meta name="description" content="Homepage of Henry Dang">
+  <!-- you would link to an external stylesheet here! -->
+  <!-- <link rel="stylesheet" href="css/4/w3.css"> -->
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--Image on the sidebar-->
+  <style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Montserrat", sans-serif
+    }
+
+    .w3-row-padding img {
+      margin-bottom: 12px
+    }
+
+    .bgimg {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url('images/linkedInHeadshot.png');
+      min-height: 100%;
+    }
+  </style>
+  <!-- you would also link to Bootstrap here! -->
+  <title>Henry Dang &#8211; Portfolio</title>
+</head>
+
+
+<body>
+<!-- Sidebar with image -->
+  <nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:40%;">
+    <div class="bgimg"></div>
+  </nav>
+
+  <!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+  <nav class="w3-sidebar w3-light-grey w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2"
+    id="mySidebar">
+    <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-light-grey w3-xxxlarge w3-display-topright"
+      style="padding:0 12px;">
+      <span class="fa fa-remove"></span>
+    </a>
+    <div class="w3-bar-block w3-center">
+      <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Home</a>
+      <a href="#about" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">About</a>
+      <a href="#portfolio" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Portfolio</a>
+      <a href="#clubs&Hobbies" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Clubs & Hobbies</a>
+      <a href="#contact" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="w3-main w3-padding-large" style="margin-left:40%">
+
+    <!-- Menu icon to open sidebar -->
+    <span class="w3-button w3-top w3-black w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;"
+      onclick="openNav()"><span class="fa fa-bars"></span></span>
+
+    <!-- Header -->
+    <header class="w3-container w3-center" id="home">
+      <h1 class="w3-jumbo"><strong>Henry Dang</strong></h1>
+      <p>Game Producer and Front-End Web Developer</p>
+      <img src="images/linkedInHeadshot.png" alt ="scaled down of Henry Dang's face" class="w3-image w3-hide-large w3-hide-small w3-round"
+        style="display:block;width:60%;margin:auto;">
+      <img src="images/linkedInHeadshot.png" alt ="slighly scaled down of Henry Dang's face" class="w3-image w3-hide-large w3-hide-medium w3-round" width="1000"
+        height="1333">
+      <div class="w3-content w3-text-grey">
+        <h2>Contact Me</h2>
+        <hr class="w3-opacity">
+  
+        <div class="w3-section">
+          <p><span class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></span> Lake Elsinore, CA</p>
+          <address>
+          <p><span class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </span>Email: <a href="mailto:hpdang@uci.edu" target="_blank" rel="noreferrer noopener"> hpdang@uci.edu</a></p>
+          </address>
+          <p><span class="fa fa-github fa-fw w3-xxlarge w3-margin-right"> </span> <a href="https://github.com/BAOTD789" target="_blank" rel="noreferrer noopener"> https://github.com/BAOTD789</a> </p>
+          <a class="w3-button w3-light-grey w3-padding-large w3-section" href="https://docs.google.com/document/d/1ZmS6IFH3NVBEXSqZXBO5t9_AvMp3_OJQMfQpoo_XB6o/edit?usp=sharing"
+          target="_blank" rel="noreferrer noopener">
+            <span class="fa fa-file"> </span> Resume
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
+      <h2>About me</h2>
+      <hr class="w3-opacity">
+      <p> Greetings, my name is Henry Dang.&nbsp; Currently, I am a student majoring in the Informatics program at University of California Irvine, specializing in Human and Computer Interactions.&nbsp; My hobbies include reading manga, working on game development as a producer, and playing a small card game called
+        <a href="https://lor.mobalytics.gg/profile/c988d17b-ea1a-449f-8877-7539aada570d/overview" target="_blank"
+          rel="noreferrer noopener"> Legends of RuneTerra</a>.&nbsp; I hope to become a producer for a game company and manage the production cycle of indie devs asissting them with marketing and publishing.
+      </p>
+    </div>
+
+    <!-- Portfolio Section -->
+    <div class="w3-padding-16 w3-content" id="portfolio">
+      <h2 class="w3-text-grey">My Portfolio</h2>
+      <hr class="w3-opacity">
+
+      <section id="portfolio_item_1" class="content-block" data-column-mode-sm="single" data-column-mode-xs="single">
+          <div class="row">
+            <div id="port_logo1" class="column" data-xl-width="6"> <img src="images/vgdc_logo.png"
+                alt="logo of the Video Game Development Club at UCI" width="140" height="140" style="float: left;">
+            </div>
+            <div id="port_des1" class="column" data-xl-width="6">
+              <div id="port_title1">
+                <h3 style="font-size: 1.33333rem;" data-mce-style="font-size: 1.33333rem;"><span
+                    class="font_ywvyx1kkv">Project Management Work at UCI<br></span></h3>
+              </div>
+              <div id="subtitle_container1" class="column-content">
+                <p> Managing and Forming Teams with Video Game Development Club @ UCI </p>
+              </div>
+              <div id="what_i_learned1" class="is-content">
+                <p style="font-size: 0.777778rem;" data-mce-style="font-size: 0.777778rem;"><span
+                    style="color: rgb(59, 66, 87);" data-mce-style="color: #3B4257;" class="font_ui3hs318i">Team
+                    Organization | Team Management</span></p>
+              </div>
+
+              <div class="ce-button" data-align="left">
+                <div class="is-content" data-width="auto">
+                  <a data-font="regular" href="VGDC_PM.html" target="_self">View Project</a>
+                </div>
+              </div>
+            </div>
+      </section> <br>
+
+      <section id="portfolio_item_2" class="content-block" data-column-mode-sm="single" data-column-mode-xs="single">
+          <div class="row">
+            <div id="port_logo2" class="column" data-xl-width="6"> <img src="images/BigByteLogo.png"
+                alt="logo of the Big Byte" width="140" height="140" style="float: left; padding: 20px">
+            </div>
+            <div id="port_des2" class="column" data-xl-width="6">
+              <div id="port_title2">
+                <h3 style="font-size: 1.33333rem;" data-mce-style="font-size: 1.33333rem;"><span
+                    class="font_ywvyx1kkv"> Project Manager for The Big Byte <br></span></h3>
+              </div>
+              <div id="subtitle_container2" class="column-content">
+                <p>Managing, Organizing, the Upcoming Workload for Recipe Creator Site</p>
+              </div>
+              <div id="what_i_learned2" class="is-content">
+                <p style="font-size: 0.777778rem;" data-mce-style="font-size: 0.777778rem;"><span
+                    style="color:  rgb(32, 66, 87);" data-mce-style="color: #3b4257;" class="font_ui3hs318i">
+                    Front-End Design | Team Management</span></p>
+              </div>
+
+              <div class="ce-button" data-align="left">
+                <div class="is-content" data-width="auto">
+                  <!-- <a data-font="regular" href="The_Big_Byte.html" target="_self">View Project</a> -->
+                </div>
+              </div>
+            </div>
+      </section> <br>
+
+      <section id="portfolio_item_3" class="content-block" data-column-mode-sm="single" data-column-mode-xs="single">
+        <div class="row">
+          <div id="port_logo3" class="column" data-xl-width="6"> <img src="images/Inf132_Logo.png"
+              alt="logo of the Big Byte" width="140" height="140" style="float: left; padding: 20px; border-radius: 50px;">
+          </div>
+          <div id="port_des3" class="column" data-xl-width="6">
+            <div id="port_title3">
+              <h3 style="font-size: 1.33333rem;" data-mce-style="font-size: 1.33333rem;"><span
+                  class="font_ywvyx1kkv"> Informatics 132 - SnapSnack<br></span></h3>
+            </div>
+            <div id="subtitle_container3" class="column-content">
+              <p>Collecting Background data, Creating Personas, and Designing for a Food Recognition App.</p>
+            </div>
+            <div id="what_i_learned3" class="is-content">
+              <p style="font-size: 0.777778rem;" data-mce-style="font-size: 0.777778rem;"><span
+                  style="color:  rgb(32, 66, 87);" data-mce-style="color: #3b4257;" class="font_ui3hs318i">
+                  Front-End Design</span></p>
+            </div>
+
+            <div class="ce-button" data-align="left">
+              <div class="is-content" data-width="auto">
+                <a data-font="regular" href="Inf_132.html" target="_self">View Project</a>
+              </div>
+            </div>
+
+          </div>
+      </section> <br>
+
+      <!-- End Portfolio Section -->
+    </div>
+
+    <!-- Club & Hobbies Section -->
+    <div class="w3-padding-16 w3-content" id="clubs&Hobbies">
+      <!-- Testimonials -->
+      <h2 class="w3-text-grey">Clubs and Hobbies</h2>
+      <hr class="w3-opacity">
+      <img src="images/vgdc_logo.png" alt="VGDC logo" class="w3-left w3-circle w3-margin-right" style="width:80px">
+      <p><span class="w3-large w3-text-black w3-margin-right"><a href="https://sites.google.com/uci.edu/vgdcuci/home" target="_blank" rel="noreferrer noopener">Video Game Development Club @ UCI</a></span></p>
+      <p>Worked on game development projects as a producer on my itch.io 
+        and also became a production officer, teaching general members about
+        organization, scheduling, and communicating with your teammates. 
+      </p>
+     
+      <br>
+
+      <img src="images/AA_logo.png" alt="Animation Anteaters logo" class="w3-left w3-circle w3-margin-right" style="width:80px">
+      <p><span class="w3-large w3-text-black w3-margin-right"><a href="http://www.animationanteaters.org/" target="_blank" rel="noreferrer noopener">Animation Anteaters</a></span></p>
+      <p>Worked on animation shorts and learned about animation principles through
+        activites collaborating with others. </p> 
+        <div style="padding: 10px; margin-left: auto; margin-right: auto; text-align: center;">
+          <img src="images/battery_boy.gif" alt="animation of a little battery with legs walking" width="512" height="288" 
+        style="border: 5px solid black; ">
+        </div><br>
+
+      <img src="images/Twitch_logo.png" alt="Twitch Logo" class="w3-left w3-circle w3-margin-right" style="width:80px">
+      <p><span class="w3-large w3-text-black w3-margin-right"><a href="https://www.twitch.tv/baotd" target="_blank" rel="noreferrer noopener">Twitch Stream</a></span></p>
+      <p>In my free time, I try work on streaming and creating assets for my stream like bg images and emote ideas.</p><br>
+
+    </div>
+
+    <!-- Contact Section -->
+    <div class="w3-padding-32 w3-content w3-text-grey" id="contact" style="margin-bottom:64px">
+      <h2>Contact Me</h2>
+      <hr class="w3-opacity">
+
+      <div class="w3-section">
+        <p><span class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></span> Lake Elsinore, CA</p>
+        <address>
+        <p><span class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </span>Email: <a href="mailto:hpdang@uci.edu" target="_blank" rel="noreferrer noopener"> hpdang@uci.edu</a></p>
+        </address>
+        <p><span class="fa fa-github fa-fw w3-xxlarge w3-margin-right"> </span> <a href="https://github.com/BAOTD789" target="_blank" rel="noreferrer noopener"> https://github.com/BAOTD789</a> </p>
+        <a class="w3-button w3-light-grey w3-padding-large w3-section" href="https://docs.google.com/document/d/1ZmS6IFH3NVBEXSqZXBO5t9_AvMp3_OJQMfQpoo_XB6o/edit?usp=sharing"
+        target="_blank" rel="noreferrer noopener">
+          <span class="fa fa-file"> </span> Resume
+        </a>
+      </div>
+      <!-- End Contact Section -->
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin:-24px">
+      <a href="https://github.com/BAOTD789" target="_blank" rel="noreferrer noopener"><em class="fa fa-github w3-hover-opacity"></em></a>
+      
+      <a href="https://www.linkedin.com/in/henry-d-018545195/" target="_blank" rel="noreferrer noopener">
+        <span class="fa fa-linkedin w3-hover-opacity"></span></a>
+      <a href="https://www.twitch.tv/baotd" target="_blank" rel="noreferrer noopener">
+        <span class="fa fa-twitch w3-hover-opacity"></span></a>
+      <a href="https://twitter.com/BAOTeeDee" target="_blank" rel="noreferrer noopener">
+        <span class="fa fa-twitter w3-hover-opacity"></span></a>
+      <a href="https://www.youtube.com/channel/UCKE6-nQEYU_RFx0SmkcyKCw" target="_blank" rel="noreferrer noopener">
+        <span class="fa fa-youtube w3-hover-opacity"></span></a>
+      <p class="w3-medium">CSS assisted by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank"
+          class="w3-hover-text-green">w3.css</a></p>
+      <!-- End footer -->
+    </footer>
+
+    <!-- END PAGE CONTENT -->
+  </div>
+
+  <script>
+    // Open and close sidebar
+    function openNav() {
+      document.getElementById("mySidebar").style.width = "60%";
+      document.getElementById("mySidebar").style.display = "block";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidebar").style.display = "none";
+    }
+  </script>
+
+</body>
+
+</html>

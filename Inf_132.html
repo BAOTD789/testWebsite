@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en-US">
+
+<!--
+WRITTEN BY: Henry Dang
+EMAIL: hpdang@uci.edu
+-->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Henry Dang">
+  <meta name="description" content="INF 132 Project">
+  <!-- you would link to an external stylesheet here! -->
+  <!-- <link rel="stylesheet" href="css/4/w3.css"> -->
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--Image on the sidebar-->
+  <style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Montserrat", sans-serif
+    }
+
+    .w3-row-padding img {
+      margin-bottom: 12px
+    }
+
+    .bgimg {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url('images/Portfolio\ Images/LoginBG2.png');
+      min-height: 80%;
+    }
+  </style>
+  <!-- you would also link to Bootstrap here! -->
+  <title>Henry Dang &#8211; 132 Project</title>
+</head>
+
+
+<body>
+<!-- Sidebar with image -->
+  <nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:40%;">
+    <div class="bgimg"></div>
+  </nav>
+
+  <!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+  <nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2"
+    id="mySidebar">
+    <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright"
+      style="padding:0 12px;">
+      <span class="fa fa-remove"></span>
+    </a>
+    <div class="w3-bar-block w3-center">
+      <a href="index.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()"><- Back to Home Menu -></a>
+      <a href="#projectMission" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Project Mission</a>
+      <a href="#problemStatement" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Problem Statement</a>
+      <a href="#competitiveAnalysis" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Competitive Analysis</a>
+      <a href="#survey&Interviews" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Survey & Interviews</a>
+      <a href="#personas" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Personas</a>
+      <a href="#sketches" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Sketches</a>
+      <a href="#mockups" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Mockups</a>
+      <a href="#keyTakeaways" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Key Takeaways</a>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="w3-main w3-padding-large" style="margin-left:40%">
+    <!-- Menu icon to open sidebar -->
+    <span class="w3-button w3-top w3-black w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;"
+      onclick="openNav()"><span class="fa fa-bars"></span></span>
+
+    <!-- Header -->
+    <header class="w3-container w3-center" id="home">
+      <h1 class="w3-jumbo"><strong>SnapSnack</strong></h1>
+      <p>Informatics 132 Project at UCI (Winter 2021)</p>
+      <img src="images/Portfolio Images/LoginBG2.PNG" class="w3-image w3-hide-large w3-hide-small w3-round"
+        style="display:block;width:60%;margin:auto;">
+      <img src="images/Portfolio Images/LoginBG2.PNG" class="w3-image w3-hide-large w3-hide-medium w3-round" width="1000"
+        height="1333">
+    </header>
+  
+    <div class="w3-content w3-justify w3-text-grey w3-padding-16" id="projectDetails">
+      <h2>Project Details</h2>
+      <hr class="w3-opacity"> 
+      <ul>
+        <li>Group Members</li>
+          <ul>
+            <li>Paul Hennessee, Henry Dang, David Bailey Rodriquez, Abdullah Al Shalah, William Gunaldi</li>
+          </ul>
+        <li>Role - UI Designer & Product Research</li>
+          <ul>
+            <li>Helped towards researching other competitors and built a solid UI that helped essence from other competitors.</li>
+          </ul>        
+        <li>Tools</li>
+          <ul>
+            <li>Figma, Google Docs, and Slack</li>
+          </ul>  
+        <li>Duration</li>
+          <ul>
+            <li>10 weeks</li>
+          </ul>  
+      </ul>
+    </div>
+    
+    <div class="w3-content w3-justify w3-text-grey w3-padding-16" id="projectMission">
+      <h2>Project Mission</h2>
+      <ul>
+        <li>Due to the pandemic, people were more interested in cooking at home.  However, some had little to no experience or had no idea on how to start with the ingredients in their fridge.</li>
+        <br>
+        <li>With Snap snack, the mobile application goal was to show a multitude of recipes just by scanning an ingredient in your fridge.  With Snap Snack, you would scan an ingredient in your fridge and it would provide a recipe that would pair along with a culmination of the ingredients you scanned.</li>
+      </ul>
+    </div>
+
+    <div class="w3-content w3-justify w3-text-grey w3-padding-16" id="problemStatement">
+      <h2>Problem Statement</h2>
+      <ul>
+        <li>The start of our development towards this app was directed towards the problem statement and thinking about problems that Snapsnack can effectively tackle and the audience that would be interested in this problem solver.  The main problem that our team thought a food-recognition app would solve is creating a meal from the ingredients left over.   As well as the idea that this application is perfect for people who need to get that first push towards getting into home cooking.  Lastly, the problem statement became wrapped up in a neat little bow with a nice catchy line.   “If you need a Snack, do it in a Snap!”</li>
+        <br>
+        <li>Statement
+          <ul>
+            <li>You probably know the daunting feeling of opening your refrigerator only to be greeted with nothing but tons of ingredients left over from the meals you recently made. It can be hard to craft a cohesive and delicious meal with this amalgamation of resources. Using SnapSnack, all you need to do is take a picture of the contents of your fridge and/or pantry and you will be presented with recipes that utilize the ingredients you have. Being able to quickly find a recipe to use will help you reduce the amount of good food tossed out. This Home application is perfect for the hungry college student that doesn’t know what to cook and needs that burst of inspiration from the food they have in their pantry and fridge.  With recipes formed by the ingredients that you scanned, you can make any situation into a fast meal. If you need a Snack, do it in a Snap!
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <div class="w3-content w3-justify w3-text-grey w3-padding-16" id="competitiveAnalysis">
+      <h2>Competitive Analysis</h2>
+      <img src="images/Portfolio Images/competitiveAnalysis.PNG" style="width:95%">
+      <ul>
+        <li>When formulating our Competitive Analysis, we needed to understand which features should take priority in a food-recognition recipe app.  So my team and I looked online for competitors that had a similar concept to our idea of SnapSnack.  Some features we took away were food recognition through the camera, keeping a history of old ingredients we scanned so you can recall old recipes, and having a vast recipe database to refer to.  Though we couldn’t get all the features designed by the end of the quarter, this process helped guide our team in the right direction on thinking about the feature list for later.
+        </li>
+      </ul>
+    </div>
+
+    <div class="w3-content w3-justify w3-text-grey w3-padding-16" id="survey&Interviews">
+      <h2>Survey & Interviews</h2>
+      <ul>
+        <li>To gather more research on how SnapSnack should work and which type of people would be interested in a food-recognition recipe app; we turned to interviewing creators that made some of these apps we competitively researched.   For learning more about how we would incorporate the food recognition system, we decided to schedule an interview with David Zeng about the work he had done for Calorie Mama.  Unfortunately, he never reached back to us about his process in designing for Calorie Mama.  </li>
+        <div class="row">
+          <div class="column3">
+            <img src="images/Portfolio Images/DavidZeng.png" style="width:50%">
+          </div>
+          <div class="column3">
+            <img src="images/Portfolio Images/CalMama.png" style="width:100%">
+          </div>
+        </div>
+      </ul>
+    </div>
+
+    <div class="w3-content w3-justify w3-text-grey w3-padding-16" id="personas">
+      <h2>Personas</h2>
+      <ul>
+        <li>With having some difficulty deciding which students could help us out towards developing good demographic groups that would be interested in using an app like Snap Snack.</li>
+        <br>
+        <li>We were able to come up with five different potential groups:
+          <ul>
+            <li>exploratory home cooks </li>
+            <li>People that needed to adhere to dietary restrictions for various reasons (religious, allergy, physical fitness)</li>
+            <li>Health conscious people</li>
+            <li>general middle class population</li>
+            <li>college users<br> 
+              <li>Persona I worked on: (College Users)</li>
+              <img src="images/Portfolio Images/Spike.jpg">
+            </li>
+            
+          </ul>
+        </li>
+        <br>
+        <li> It worked out nicely that there were five members and five groups. Each one of the groups were able to condense the idea of the demographic to a proper persona.</li>
+        </li>
+      </ul>
+    </div>
+
+    <div class="w3-content w3-justify w3-text-grey w3-padding-16" id="sketches">
+      <h2>Types of Sketches</h2>
+      <ul>
+        <div class="row">
+          <div class="column2">
+            <img src="images/Portfolio Images/sketch1.png" style="width:75%">
+          </div>
+          <div class="column2">
+            <img src="images/Portfolio Images/sketch2.png" style="width:75%">
+          </div>
+          <div class="column2">
+            <img src="images/Portfolio Images/sketch3.png" style="width:75%">
+          </div><br>
+        </div>
+
+        <div class="row">
+          <div class="column2">
+            <img src="images/Portfolio Images/sketch4.png" style="width:75%">
+          </div>
+          <div class="column2">
+            <img src="images/Portfolio Images/sketch5.png" style="width:75%">
+          </div>
+          <div class="column2">
+            <img src="images/Portfolio Images/sketch6.png" style="width:75%">
+          </div><br>
+        </div>
+        <li>Once we had a rough idea on what features needed to be included in our app from the Competitive Research Analysis and the Feature List Workshop.  The sketches below show some low fidelity sketches that our group made.  They involved basic actions of the app such as signing into the account, taking a photo of the ingredients, the recipe list for the photo of the ingredients, and the history of previous ingredients showing name and date.  These photos alone helped toward developing basic mockups.  We learned we wanted to keep the process simplistic for the final product to make the process seamless for the user.</li>
+      </ul>
+    </div>
+
+    <div class="w3-content w3-justify w3-text-grey w3-padding-16" id="mockups">
+      <h2>Mockups</h2>
+      <p>With the sketches before, we are able to have a good direction of how the mockups should be.  The mockups focused on a easy to navigate simplistic aesthetic</p>
+        <div class="row">
+          <div class="column">
+            <img src="images/Portfolio Images/LoginBG.PNG" style="width:75%">
+            <p class="caption"> Login Page</p>
+          </div>
+          <div class="column">
+            <img src="images/Portfolio Images/main_screen.png" style="width:75%">
+            <p class="caption">Home Page</p>
+          </div>
+          <div class="column">
+            <img src="images/Portfolio Images/Snapping_photo.png" style="width:75%">
+            <p class="caption">Capture Page</p>
+          </div>
+          <div class="column">
+            <img src="images/Portfolio Images/recipe.png"  style="width:75%">
+            <p class="caption">Recipe Page</p>
+          </div><br>
+        </div>
+        <ul>
+          <li>Login Page
+            <ul>
+              <li>We kept the login page very conventional: enter username and password. Give people the choice of if they wanted to be tracked or not, and allow them to sign in with a linked Facebook, Twitter, or Google account.</li>
+            </ul>
+          </li>
+          <li>Home Page
+            <ul>
+              <li>This is the home page after login. Taking the reviews into account, we revised our plan of having the camera screen be the first thing our audience sees.</li>
+            </ul>
+          </li>
+          <li>Capture Page
+            <ul>
+              <li>As discussed earlier, we wanted to keep the picture screen nice and easy. Simply take a picture.</li>
+            </ul>
+          </li>
+          <li>Recipe Page
+            <ul>
+              <li>After taking a picture, a variety of recipes will be generated for the user. </li>
+            </ul><br>
+          </li>
+        </ul>
+    </div>
+
+    <div class="w3-content w3-justify w3-text-grey w3-padding-16" id="keyTakeaways">
+      <h2>Key Takeaways</h2>
+      <ul>
+        <li>After undergoing this process of working with a team on the Human and Computer Interaction project course.  It involved all steps such as drafting up a problem statement, doing competitive analysis, drafting up interview questions, creating personas, sketching up designs, and drafting up mock-ups.  These skills and practices I hope to pass onto other projects and use when starting my career.</li>
+        <br>
+        <li>The top takeaways that I learned through these 10 weeks were:
+          <ul>
+            <li>The preparation needed for the design process is a long and vital process</li>
+            <li>The User Research is extremely helpful to get a general idea of what your app should include</li>
+            <li>Having a better understanding of the lifecycle of HCI design, I hope to help dividing work up for the future</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin:-24px">
+      <a href="https://github.com/BAOTD789" target="_blank" rel="noreferrer noopener"><em class="fa fa-github w3-hover-opacity"></em></a>
+      
+      <a href="https://www.linkedin.com/in/henry-d-018545195/" target="_blank" rel="noreferrer noopener">
+        <span class="fa fa-linkedin w3-hover-opacity"></span></a>
+      <a href="https://www.twitch.tv/baotd" target="_blank" rel="noreferrer noopener">
+        <span class="fa fa-twitch w3-hover-opacity"></span></a>
+      <a href="https://twitter.com/BAOTeeDee" target="_blank" rel="noreferrer noopener">
+        <span class="fa fa-twitter w3-hover-opacity"></span></a>
+      <a href="https://www.youtube.com/channel/UCKE6-nQEYU_RFx0SmkcyKCw" target="_blank" rel="noreferrer noopener">
+        <span class="fa fa-youtube w3-hover-opacity"></span></a>
+      <p class="w3-medium">CSS assisted by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank"
+          class="w3-hover-text-green">w3.css</a></p>
+      <!-- End footer -->
+    </footer>
+
+    <!-- END PAGE CONTENT -->
+  </div>
+
+  <script>
+    // Open and close sidebar
+    function openNav() {
+      document.getElementById("mySidebar").style.width = "60%";
+      document.getElementById("mySidebar").style.display = "block";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidebar").style.display = "none";
+    }
+  </script>
+
+</body>
+
+</html>
